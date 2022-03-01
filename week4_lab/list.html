@@ -24,9 +24,11 @@
         <div class="list">
             <h2 class="list-title">Groceries</h2>
             <ol, id="grocery-list">
-                <li> Eggs <button class="delete-item" 
-                    onclick="deleteListItem(this.parentNode)">X</button></li>
-
+                <li>
+                    <label for="check-eggs">Eggs</label>
+                    <input id="check-eggs" type="checkbox" class="complete-item" onclick="completeListItem(this)">
+                    <button class="delete-item"  onclick="deleteListItem(this.parentNode)">X</button>
+                </li>                
                 <li>Milk</li>
                 <li>Cereal</li>
             </ol>
