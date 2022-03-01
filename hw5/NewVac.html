@@ -3,16 +3,15 @@
 <head>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="appstyle.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
     
-    <title>CMU COVID INFO SYSTEM</title>
+    <title>Book Appointment | CMU COVID INFO SYSTEM</title>
     <meta charset="UTF-8">
 </head>
 
+<!-- header -->
 <body>
     <header>
-        <h1>Book Appointment | CMU COVID INFO SYSTEM</h1>
+        <h1>CMU COVID INFO SYSTEM</h1>
         <nav>
             <a href="index.html">HOME</a> -
             <a href="logout.html">LOGOUT</a>
@@ -20,11 +19,13 @@
     </header>
 
     <div id="page-name">
-        <h1>Book Appointment -- Vaccination</h1>
+        <h1>Vaccination Appointment</h1>
     </div>
     
     <div class="main-content">
+        <!-- Location list -->
         <div id="appointment-options">
+            <h2>Locations</h2>
             <div class="locations">
                 <div class="location-name">
                     TCS Hall
@@ -36,7 +37,7 @@
                     <p style="color: green;">
                         Available today
                     </p>
-                    <a href="locations/TCS.html">More Info</a>
+                    <a href="TCS.html">More Info</a>
                 </div>
                 
             </div>
@@ -51,7 +52,7 @@
                     <p style="color: yellowgreen;">
                         Available in 7 days
                     </p>
-                    <a href="locations/EG.html">More Info</a>
+                    <a href="EG.html">More Info</a>
                 </div>
                 
             </div>
@@ -66,15 +67,16 @@
                     <p style="color: red;">
                         Unavailable
                     </p>
-                    <a href="locations/Gym.html">More Info</a>
+                    <a href="Gym.html">More Info</a>
                 </div>
                 
             </div>
+        
+        <!-- Reference Map -->
         </div>
         <div class="map">
             <img src="https://www.cs.cmu.edu/~csbots/images/AnnotatedMap.jpg" 
-                alt="cmu map"
-            >
+                alt="cmu map">
         </div>
     </div>   
 </body>

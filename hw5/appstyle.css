@@ -6,9 +6,9 @@ body {
 
 img {
     display: block;
-    width: 1000pt;
-    position: absolute;
+    width: 110%;
   }
+
 /*********** HEADER ************/
 
 header {
@@ -20,57 +20,42 @@ header {
 }
 
 h1 {
+    font-size: 25pt;
     margin: 0;
 }
 
-h3 {
-    color: #466995;
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 30px;
-    margin-left: 100pt;
-  }
-
-/*********** LISTS ************/
-
-#appointment-options {
-    margin-left: 200px;
-    width: 600pt;
-    margin-top: 0pt;
-}
 
 #page-name {
-    margin: 0 auto;
-    width: 20%;
+    margin-left: 38%;
+    width: 40%;
     padding-top: 80px;
-}
-
-.locations {
-    width: 30%;
-    padding: 20px;
-    margin-bottom: 10px;
-    margin-left: 380px;
-    background-color: #eeeeee;
-    border: 1px solid #bbbbbb;
-}
-
-.search {
-    width: 1000pt;
-    padding: 20pt;
-    height: 10pt;
-    margin-top: 20pt;
-    margin-left: 100px;
-    background-color: #eeeeee;
-    border: 1px solid #bbbbbb;
 }
 
 header a {
     color: white;
     text-decoration: none;
 }
+
+
+/*********** APPOINTMENT OPTIONS ************/
+
+#appointment-options {
+    margin-left: 0%;
+    width: 100%;
+    margin-top: 0pt;
+}
+
+/*********** LOCATION LISTS ************/
+
+.locations {
+    width: 40%;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    background-color: #eeeeee;
+    border: 1px solid #bbbbbb;
+}
+
 
 .location-name  {
     font-size: 20pt;
@@ -82,19 +67,41 @@ header a {
 
 .app-type {
     display: grid;
-    grid-template-columns: 240pt 240pt 1000pt;
-    padding: 00px;
-    margin-left: 240px;
-    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 6.5%;
+    width: 20%;
 }
 
 .main-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 70%;
+    width: 80%;
 }
 
+h2 {
+    color: #A6192E;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+/*********** CLICKABLE ************/
+
+h3 {
+    color: #A6192E;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px;
+    margin-left: 100pt;
+  }
+
 h3:hover {
-    background: #C0D6DF;
+    background: #A6192E;
     color: #FFF;
 }
