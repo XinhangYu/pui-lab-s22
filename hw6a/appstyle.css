@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    display: block;
+    width: 110%;
+  }
+
+/*********** HEADER ************/
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #A6192E;
+    color: white;
+    font-family: 'Source Serif Pro', serif;
+}
+
+h1 {
+    font-size: 25pt;
+    margin: 0;
+}
+
+
+#page-name {
+    margin-left: 38%;
+    width: 40%;
+    padding-top: 80px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*********** APPOINTMENT OPTIONS ************/
+
+#appointment-options {
+    margin-left: 0%;
+    width: 100%;
+    margin-top: 0pt;
+}
+
+/*********** LOCATION LISTS ************/
+
+.locations {
+    width: 40%;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    background-color: #eeeeee;
+    border: 1px solid #bbbbbb;
+}
+
+
+.location-name  {
+    font-size: 20pt;
+}
+
+.location-detail  {
+    font-size: 14pt;
+}
+
+.app-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 6.5%;
+    width: 20%;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+}
+
+h2 {
+    color: #A6192E;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+/*********** CLICKABLE ************/
+
+h3 {
+    color: #A6192E;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px;
+    margin-left: 100pt;
+  }
+
+h3:hover {
+    background: #A6192E;
+    color: #FFF;
+}
