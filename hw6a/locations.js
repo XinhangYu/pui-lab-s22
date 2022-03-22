@@ -1,5 +1,5 @@
 //get appointment type and location from html link string
-var TypeLoc = (window.location.search.substring(1,));
+var TypeLoc = (window.location.search.substring(1));
 var plus = TypeLoc.indexOf('+type=');
 var loc = TypeLoc.substring(0,plus);
 var type = TypeLoc.substring(plus+6);
@@ -20,7 +20,6 @@ document.querySelector('#submit').addEventListener('click', function () {
     var address = document.querySelector('.Address span').innerHTML; 
     var tel = document.querySelector('.Tel span').innerHTML; 
     var myselect = document.getElementById("test"); 
-    var index = myselect.selectedIndex;
     
     var datetime = document.getElementById("birthday").value; 
     
@@ -44,10 +43,11 @@ document.querySelector('#submit').addEventListener('click', function () {
         'tel': tel,
         'type': type,
         'datetime': datetime
-    }
-    var user = [...localdata, savedata] 
+    };
+    localdata.push(savedata);
+    var user = localdata;
     localStorage.setItem('user', JSON.stringify(user));
     
     //jump to successful appointment page directly 
     window.location.href = './success.html';
-})
+});

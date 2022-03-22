@@ -13,8 +13,8 @@ function show() {
     // loop through each object in the local data array
     // and display in the corresponding table (test or vaccination)
     localdata.forEach((ele, i) => {
-        lenOfData += 1;
         if(ele.type == "Vaccination"){
+            lenOfData += 1;
             htmlVac += `
             <tr>
                 <th>${ele.location}</th>
@@ -27,6 +27,7 @@ function show() {
             `
         }
         else if (ele.type == "Testing"){
+            lenOfData += 1;
             htmlTest += `
             <tr>
                 <th>${ele.location}</th>
@@ -42,6 +43,7 @@ function show() {
     document.getElementById('box1').innerHTML = htmlVac;
     document.getElementById('box2').innerHTML = htmlTest;
     document.getElementById('app-count').innerHTML = lenOfData + " appointment(s)";
+    console.log(localdata);
 }
 
 

@@ -1,6 +1,6 @@
 
 //get appointment type from html link string
-var appointmentType = (window.location.search.substring(1,));
+var appointmentType = (window.location.search.substring(1));
 document.getElementById("page-name").innerHTML = appointmentType +" Appointment";
 
 //go to page base on location and appointment type
