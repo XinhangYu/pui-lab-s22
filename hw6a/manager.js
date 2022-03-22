@@ -9,6 +9,7 @@ show()
 function show() {
     var htmlVac = '';
     var htmlTest = '';
+    lenOfData = 0
     // loop through each object in the local data array
     // and display in the corresponding table (test or vaccination)
     localdata.forEach((ele, i) => {
@@ -40,9 +41,9 @@ function show() {
     });
     document.getElementById('box1').innerHTML = htmlVac;
     document.getElementById('box2').innerHTML = htmlTest;
+    document.getElementById('app-count').innerHTML = lenOfData + " appointment(s)";
 }
 
-document.getElementById('app-count').innerHTML = lenOfData + "appointment(s)"
 
 //cancel appointment button
 function cancel(i) {
