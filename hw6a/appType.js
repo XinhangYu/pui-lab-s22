@@ -2,11 +2,13 @@ var appointmentType = (window.location.search.substring(1,));
 document.getElementById("page-name").innerHTML = appointmentType +" Appointment";
 
 function tsc() {
-    window.location.href = './TCS.html?type='+appointmentType;
+    var str = './locations.html?TCSHall+type='+appointmentType;
+    window.location.href = str;
 }
 
 function eg() {
-    window.location.href = './EG.html?type=Vaccination'+appointmentType;
+    var str = './locations.html?EastGarage+type='+appointmentType;
+    window.location.href = str;
 }
 
 function gym() {

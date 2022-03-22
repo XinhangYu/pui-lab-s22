@@ -1,3 +1,8 @@
+var TypeLoc = (window.location.search.substring(1,));
+var plus = TypeLoc.indexOf('+type=');
+var loc = TypeLoc.substring(0,plus);
+var type = TypeLoc.substring(plus+6);
+document.getElementById("page-name").innerHTML = "New "+ type + " Appointment @" + loc.toUpperCase()
 
 //得到当前时间
 var date_now = new Date();
@@ -17,7 +22,7 @@ document.querySelector('#submit').addEventListener('click', function () {
     var tel = document.querySelector('.Tel span').innerHTML; /* 电话 */
     var myselect = document.getElementById("test"); /* 类型 */
     var index = myselect.selectedIndex;
-    var type = myselect.options[index].value;
+    
     var datetime = document.getElementById("birthday").value; /* 日期 */
     if (datetime == '') {
         alert('Please complete the contents')
@@ -27,6 +32,7 @@ document.querySelector('#submit').addEventListener('click', function () {
     var localdata = localStorage.getItem('user') == null ? [] : JSON.parse(localStorage.getItem('user'))
     /* 组装存储的数据 */
     var savedata = {
+        'location': loc,
         'address': address,
         'tel': tel,
         'type': type,
@@ -36,8 +42,7 @@ document.querySelector('#submit').addEventListener('click', function () {
     var user = [...localdata, savedata] /* 形成数组 */
     /* 存储数据到本地 */
     localStorage.setItem('user', JSON.stringify(user));
-    console.log("here")
-    console.log(localStorage)
+    
     //alert('success');
     /* 跳转记录页面 */
     window.location.href = './success.html'

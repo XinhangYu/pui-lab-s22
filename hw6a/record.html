@@ -4,22 +4,9 @@
 <head>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="appstyle.css">
-    <title>Book Appointment | CMU COVID INFO SYSTEM</title>
+    <title>My Record | CMU COVID INFO SYSTEM</title>
     <meta charset="UTF-8">
-    <style>
-        table {
-            width: 900px;
-            margin: auto;
-            border: 1px solid #ccc;
-            margin: 30px;
-        }
-
-        table tr,
-        table th {
-            font-size: 14px;
-            line-height: 30px;
-        }
-    </style>
+    
 </head>
 
 <!-- header -->
@@ -29,29 +16,39 @@
         <h1>CMU COVID INFO SYSTEM</h1>
         <nav>
             <a href="index.html">HOME</a> -
-            <a href="logout.html">LOGOUT</a>
+            <a href="index.html">LOGOUT</a>
         </nav>
     </header>
 
     <div id="page-name">
         <h1>My Rocord</h1>
     </div>
+    <h2>VACCINATION</h2>
     <table cellspacing=0>
         <thead>
             <tr>
+                <th>Location</th>
+                <th>Address</th>
+                <th>Tel</th>
+                <th>Type</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody class="box1">
+        </tbody>
+    </table>
+    <h2>TESTING</h2>
+    <table cellspacing=0>
+        <thead>
+            <tr>
+                <th>Location</th>
                 <th>Address</th>
                 <th>Tel</th>
                 <th>Type</th>
                 <th>date</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <th>1</th>
-                <th>1</th>
-                <th>1</th>
-                <th>1</th>
-            </tr>
+        <tbody class="box2">
         </tbody>
     </table>
     <script src="./record.js"></script>

@@ -11,6 +11,7 @@ var html = '';
 localdata.forEach((ele, i) => {
     html += `
         <tr>
+            <th>${ele.location}</th>
             <th>${ele.address}</th>
             <th>${ele.tel}</th>
             <th>${ele.type}</th>

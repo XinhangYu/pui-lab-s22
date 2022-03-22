@@ -13,11 +13,12 @@ function show() {
     localdata.forEach((ele, i) => {
         html += `
             <tr>
+                <th>${ele.location}</th>
                 <th>${ele.address}</th>
                 <th>${ele.tel}</th>
                 <th>${ele.type}</th>
                 <th>${ele.datetime}</th>
-                <th><a href='javascript:;' onclick='deleted(${i})'>deleted</a></th>
+                <th><a href='javascript:;' onclick='cancel(${i})'>cancel</a></th>
             </tr>
             `
     });
@@ -25,7 +26,7 @@ function show() {
 
 }
 /* 删除数据 */
-function deleted(i) {
+function cancel(i) {
     localdata.splice(i, 1)
     localStorage.setItem('user', JSON.stringify(localdata));
     show()

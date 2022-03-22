@@ -26,13 +26,15 @@ h1 {
 }
 
 
+
 /*********** LISTS ************/
 
 
 #page-name {
     margin: 0 auto;
-    width: 20%;
+    width: 80%;
     padding-top: 80px;
+    padding-bottom: 10px;
 }
 
 
