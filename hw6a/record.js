@@ -7,9 +7,11 @@ console.log(localStorage.getItem(
 show()
 /* 显示数据 */
 function show() {
-var html = '';
+var htmlVac = '';
+var htmlTest = '';
 localdata.forEach((ele, i) => {
-    html += `
+    if(ele.type == "Vaccination"){
+        htmlVac += `
         <tr>
             <th>${ele.location}</th>
             <th>${ele.address}</th>
@@ -18,7 +20,20 @@ localdata.forEach((ele, i) => {
             <th>${ele.datetime}</th>
         </tr>
         `
+    }
+    else{
+        htmlTest += `
+        <tr>
+            <th>${ele.location}</th>
+            <th>${ele.address}</th>
+            <th>${ele.tel}</th>
+            <th>${ele.type}</th>
+            <th>${ele.datetime}</th>
+        </tr>
+        `
+    }
 });
-document.querySelector('tbody').innerHTML = html
+document.getElementById('box1').innerHTML = htmlTest;
+document.getElementById('box2').innerHTML += htmlVac;
 
 }

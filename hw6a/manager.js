@@ -9,20 +9,34 @@ console.log(localStorage.getItem(
 show()
 /* 显示数据 */
 function show() {
-    var html = '';
+    var htmlVac = '';
+    var htmlTest = '';
     localdata.forEach((ele, i) => {
-        html += `
+        if(ele.type == "Vaccination"){
+            htmlVac += `
             <tr>
                 <th>${ele.location}</th>
                 <th>${ele.address}</th>
                 <th>${ele.tel}</th>
                 <th>${ele.type}</th>
                 <th>${ele.datetime}</th>
-                <th><a href='javascript:;' onclick='cancel(${i})'>cancel</a></th>
             </tr>
             `
+        }
+        else{
+            htmlTest += `
+            <tr>
+                <th>${ele.location}</th>
+                <th>${ele.address}</th>
+                <th>${ele.tel}</th>
+                <th>${ele.type}</th>
+                <th>${ele.datetime}</th>
+            </tr>
+            `
+        }
     });
-    document.querySelector('tbody').innerHTML = html
+    document.getElementById('box1').innerHTML = htmlTest;
+    document.getElementById('box2').innerHTML += htmlVac;
 
 }
 /* 删除数据 */
