@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="styleLocation.css">
-    
+
     <title>TCS Hall | Locations | CMU COVID INFO SYSTEM</title>
     <meta charset="UTF-8">
 </head>
 
 <!-- header -->
+
 <body>
     <header>
         <h1>CMU COVID INFO SYSTEM</h1>
@@ -24,18 +26,25 @@
 
     <!-- location detail text and map-->
     <div class="main-content">
-        <div class="location-detail">
-            Address: xxxx xxxx xxxx
+        <div class="location-detail Address">
+            Address: <span>xxxx xxxx xxxx</span>
         </div>
-        <div class="location-detail">
-            Tel: (xxx) - xxx - xxxx
+        <div class="location-detail tel">
+            Tel: <span>(xxx) - xxx - xxxx</span>
         </div>
+        <p>Choose Type:
+            <select name="" id="test">
+                <option value="VACCINATION">VACCINATION</option>
+                <option value="TESTING">TESTING</option>
+            </select>
+        </p>
+        <p>Choose date <input type="date" id="birthday"></p>
+        <a href="javascript:;" id="submit">submit</a>
         <div class="map">
-            <img src="https://www.cs.cmu.edu/~csbots/images/AnnotatedMap.jpg" 
-                alt="cmu map"
-            >
+            <img src="https://www.cs.cmu.edu/~csbots/images/AnnotatedMap.jpg" alt="cmu map">
         </div>
     </div>
+    
 </body>
 
 </html>

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="appstyle.css">
-    <!-- javascript -->
-    <script src="book.js" type="text/javascript"></script>
+
     <title>Book Appointment | CMU COVID INFO SYSTEM</title>
     <meta charset="UTF-8">
 </head>
 
 <!-- header -->
+
 <body>
     <header>
         <h1>CMU COVID INFO SYSTEM</h1>
@@ -22,7 +23,11 @@
     <div id="page-name">
         <h1>Vaccination Appointment</h1>
     </div>
-    
+    <div class="app-type">
+        <h2>Type</h2>
+        <h3><a href="./Vaccination.html">Vaccination</a></h3>
+        <h3><a href="./Testing.html">Testing</a></h3>
+    </div>
     <div class="main-content">
         <!-- Location list -->
         <div id="appointment-options">
@@ -31,18 +36,18 @@
                 <div class="location-name">
                     TCS Hall
                 </div>
+
                 <div class="location-detail">
                     Address: xxxx xxxx xxxx
                     Tel: (xxx) - xxx - xxxx
                     <p style="color: green;">
                         Available today
                     </p>
-                    <button class = "select-app" href="#"> Select</button>
-                    <a href="TCS.html">More Info</a>
+                    <a href="javascript:;" onclick="tsc()">More Info</a>
                 </div>
-                
+
             </div>
-        
+
             <div class="locations">
                 <div class="location-name">
                     East Garage
@@ -53,11 +58,11 @@
                     <p style="color: yellowgreen;">
                         Available in 7 days
                     </p>
-                    <a href="EG.html">More Info</a>
+                    <a href="javascript:;" onclick="eg()">More Info</a>
                 </div>
-                
+
             </div>
-        
+
             <div class="locations">
                 <div class="location-name">
                     Gym
@@ -68,18 +73,31 @@
                     <p style="color: red;">
                         Unavailable
                     </p>
-                    <a href="Gym.html">More Info</a>
+                    <a href="javascript:;" onclick="gym()">More Info</a>
                 </div>
-                
+
             </div>
-        
-        <!-- Reference Map -->
+
+            <!-- Reference Map -->
         </div>
         <div class="map">
-            <img src="https://www.cs.cmu.edu/~csbots/images/AnnotatedMap.jpg" 
-                alt="cmu map">
+            <img src="https://www.cs.cmu.edu/~csbots/images/AnnotatedMap.jpg" alt="cmu map">
         </div>
-    </div>   
+    </div>
+    <script>
+        function tsc() {
+            window.location.href = './TCS.html'
+        }
+
+        function eg() {
+            window.location.href = './EG.html'
+        }
+
+        function gym() {
+            // window.location.href = './Gym.html'
+            alert("Can't make an appointment")
+        }
+    </script>
 </body>
 
 </html>

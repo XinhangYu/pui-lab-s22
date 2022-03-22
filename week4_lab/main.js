@@ -1,8 +1,3 @@
-function addNewList() {
-    alert('hello world alert!');
-    console.log('hello world console');
-}
-
 function onAddItem() {
     let list = document.getElementById("grocery-list");
     let itemInput = document.getElementById("text_input");

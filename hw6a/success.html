@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="appstyle.css">
+    <title>Book Appointment | CMU COVID INFO SYSTEM</title>
+    <meta charset="UTF-8">
+    <style>
+        table {
+            width: 900px;
+            margin: auto;
+            border: 1px solid #ccc;
+            margin: 30px;
+        }
+
+        table tr,
+        table th {
+            font-size: 14px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<!-- header -->
+
+<body>
+    <header>
+        <h1>CMU COVID INFO SYSTEM</h1>
+        <nav>
+            <a href="index.html">HOME</a> -
+            <a href="logout.html">LOGOUT</a>
+        </nav>
+    </header>
+
+    <div id="page-name">
+        <h1>Appointment Booked!</h1>
+    </div>
+    <h2> You have Booked an appointment: <h2>
+   
+    <script>
+        /* 获取本地数据 */
+        var arr = JSON.parse(localStorage.getItem('user'))
+        var len = arr.length;
+        var lastData = arr[len-1];
+        show();
+        console.log("last data");
+        console.log(lastData);
+        console.log("local storage");
+        console.log(localStorage);
+        /* 显示数据 */
+        function show() {
+            var html = '';
+            var ele = lastData
+            html += `
+                <tr>
+                    <th>${ele.address}</th>
+                    <th>${ele.tel}</th>
+                    <th>${ele.type}</th>
+                    <th>${ele.datetime}</th>
+                </tr>
+                    `
+            console.log(html)
+            document.querySelector('h2').innerHTML += html
+        }
+        
+    </script>
+</body>
+
+</html>
