@@ -1,6 +1,9 @@
+
+//get appointment type from html link string
 var appointmentType = (window.location.search.substring(1,));
 document.getElementById("page-name").innerHTML = appointmentType +" Appointment";
 
+//go to page base on location and appointment type
 function tsc() {
     var str = './locations.html?TCSHall+type='+appointmentType;
     window.location.href = str;
@@ -12,7 +15,6 @@ function eg() {
 }
 
 function gym() {
-    // window.location.href = './Gym.html'
     alert("Can't make an appointment");
 }
 

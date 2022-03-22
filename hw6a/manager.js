@@ -1,16 +1,16 @@
 
-/* 获取本地数据 */
+//get local data
 var localdata = localStorage.getItem('user') == null ? [] :
-    JSON.parse(localStorage.getItem(
-        'user'));
-console.log(localStorage.getItem(
-    'user'))
+    JSON.parse(localStorage.getItem('user'));
 
+
+// show local data with formatting
 show()
-/* 显示数据 */
 function show() {
     var htmlVac = '';
     var htmlTest = '';
+    // loop through each object in the local data array
+    // and display in the corresponding table (test or vaccination)
     localdata.forEach((ele, i) => {
         if(ele.type == "Vaccination"){
             htmlVac += `
@@ -20,10 +20,11 @@ function show() {
                 <th>${ele.tel}</th>
                 <th>${ele.type}</th>
                 <th>${ele.datetime}</th>
+                <th><a href='javascript:;' onclick='cancel(${i})'>cancel</a></th>
             </tr>
             `
         }
-        else{
+        else if (ele.type == "Testing"){
             htmlTest += `
             <tr>
                 <th>${ele.location}</th>
@@ -31,17 +32,18 @@ function show() {
                 <th>${ele.tel}</th>
                 <th>${ele.type}</th>
                 <th>${ele.datetime}</th>
+                <th><a href='javascript:;' onclick='cancel(${i})'>cancel</a></th>
             </tr>
             `
         }
     });
-    document.getElementById('box1').innerHTML = htmlTest;
-    document.getElementById('box2').innerHTML += htmlVac;
-
+    document.getElementById('box1').innerHTML = htmlVac;
+    document.getElementById('box2').innerHTML = htmlTest;
 }
-/* 删除数据 */
+
+//cancel appointment button
 function cancel(i) {
-    localdata.splice(i, 1)
+    localdata.splice(i, 1);
     localStorage.setItem('user', JSON.stringify(localdata));
-    show()
+    show();
 }
