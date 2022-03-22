@@ -2,7 +2,7 @@
 //get local data
 var localdata = localStorage.getItem('user') == null ? [] :
     JSON.parse(localStorage.getItem('user'));
-
+var lenOfData = 0
 
 // show local data with formatting
 show()
@@ -12,6 +12,7 @@ function show() {
     // loop through each object in the local data array
     // and display in the corresponding table (test or vaccination)
     localdata.forEach((ele, i) => {
+        lenOfData += 1;
         if(ele.type == "Vaccination"){
             htmlVac += `
             <tr>
@@ -40,6 +41,8 @@ function show() {
     document.getElementById('box1').innerHTML = htmlVac;
     document.getElementById('box2').innerHTML = htmlTest;
 }
+
+document.getElementById('app-count').innerHTML = lenOfData + "appointment(s)"
 
 //cancel appointment button
 function cancel(i) {

@@ -105,6 +105,12 @@ h3:hover {
     background: #A6192E;
     color: #FFF;
 }
+#cart-feature{
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
 
 table {
     width: 900px;
