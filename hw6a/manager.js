@@ -22,6 +22,7 @@ function show() {
                 <th>${ele.tel}</th>
                 <th>${ele.type}</th>
                 <th>${ele.datetime}</th>
+                <th>${ele.time}</th>
                 <th><a href='javascript:;' onclick='cancel(${i})'>cancel</a></th>
             </tr>
             `
@@ -35,6 +36,7 @@ function show() {
                 <th>${ele.tel}</th>
                 <th>${ele.type}</th>
                 <th>${ele.datetime}</th>
+                <th>${ele.time}</th>
                 <th><a href='javascript:;' onclick='cancel(${i})'>cancel</a></th>
             </tr>
             `

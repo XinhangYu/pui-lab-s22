@@ -11,6 +11,8 @@ function show() {
     html += (lastData.type).toLowerCase() ;
     html += " appointment on ";
     html += lastData.datetime;
+    html += " ";
+    html += lastData.time;
     html += " at ";
     html += lastData.location;
     html += " has been created";

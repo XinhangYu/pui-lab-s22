@@ -18,6 +18,7 @@ function show() {
                 <th>${ele.tel}</th>
                 <th>${ele.type}</th>
                 <th>${ele.datetime}</th>
+                <th>${ele.time}</th>
             </tr>
             `
         }
@@ -29,6 +30,7 @@ function show() {
                 <th>${ele.tel}</th>
                 <th>${ele.type}</th>
                 <th>${ele.datetime}</th>
+                <th>${ele.time}</th>
             </tr>
             `
         }

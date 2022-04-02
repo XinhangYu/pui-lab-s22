@@ -28,7 +28,8 @@ h1 {
 #page-name {
     margin-left: 38%;
     width: 40%;
-    padding-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 header a {
@@ -63,6 +64,20 @@ header a {
 
 .location-detail  {
     font-size: 14pt;
+}
+
+.list {
+    margin: 0 auto;
+    width: 20%;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+}
+
+.list a {
+    color: darkblue;
+    text-decoration: none;
 }
 
 .app-type {

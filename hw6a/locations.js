@@ -22,9 +22,9 @@ document.querySelector('#submit').addEventListener('click', function () {
     var myselect = document.getElementById("test"); 
     
     var datetime = document.getElementById("birthday").value; 
-    
+    var time = document.getElementById("timeOfDay").value;
     //cannot proceed without selecting date
-    if (datetime == '') {
+    if (datetime == '' || time == '') {
         alert('Please complete the contents');
         return false;
     }
@@ -42,12 +42,13 @@ document.querySelector('#submit').addEventListener('click', function () {
         'address': address,
         'tel': tel,
         'type': type,
-        'datetime': datetime
+        'datetime': datetime,
+        'time': time
     };
     localdata.push(savedata);
     var user = localdata;
     localStorage.setItem('user', JSON.stringify(user));
-    
+    console.log(localStorage['user'])
     //jump to successful appointment page directly 
     window.location.href = './success.html';
 });
