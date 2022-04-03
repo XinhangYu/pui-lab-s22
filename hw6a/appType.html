@@ -3,7 +3,7 @@
 
 <head>
     <!-- styles -->
-    <link rel="stylesheet" type="text/css" href="appstyle.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <title>Book Appointment | CMU COVID INFO SYSTEM</title>
     <meta charset="UTF-8">
@@ -15,8 +15,9 @@
     <header>
         <h1>CMU COVID INFO SYSTEM</h1>
         <nav>
-            <a href="index.html">HOME</a> -
-            <a href="index.html">LOGOUT</a>
+            <a href="index.html">HOME</a> |
+            <a href="manager.html">Manage Appointment</a> |
+            <a href="record.html">My Record</a>
         </nav>
     </header>
 
@@ -36,15 +37,15 @@
             <div class="locations">
                 <div class="location-name">
                     TCS Hall
+                    <a style="color: red; font-size: 15pt;"
+                    href="javascript:;" onclick="tsc()">Select</a>
                 </div>
-
                 <div class="location-detail">
-                    Address: xxxx xxxx xxxx
-                    Tel: (xxx) - xxx - xxxx
-                    <p style="color: green;">
+                    <p>Address: xxxx xxxx xxxx</p>
+                    <p>Tel: (xxx) - xxx - xxxx</p>
+                    <p style="color: green; font-size: 12pt;">
                         Available today
                     </p>
-                    <a href="javascript:;" onclick="tsc()">Select</a>
                 </div>
 
             </div>
@@ -52,29 +53,32 @@
             <div class="locations">
                 <div class="location-name">
                     East Garage
+                    <a style="color: red; font-size: 15pt;"
+                    href="javascript:;" onclick="eg()">Select</a>
                 </div>
                 <div class="location-detail">
-                    Address: xxxx xxxx xxxx
-                    Tel: (xxx) - xxx - xxxx
-                    <p style="color: yellowgreen;">
+                    <p>Address: xxxx xxxx xxxx</p>
+                    <p>Tel: (xxx) - xxx - xxxx</p>
+                    <p style="color: yellowgreen; font-size: 12pt;">
                         Available in 7 days
                     </p>
-                    <a href="javascript:;" onclick="eg()">Select</a>
                 </div>
 
             </div>
 
             <div class="locations">
                 <div class="location-name">
-                    Gym
+                    Gym 
+                    <a style="color: red; font-size: 15pt;"
+                    href="javascript:;" onclick="gym()">Select</a>
                 </div>
                 <div class="location-detail">
-                    Address: xxxx xxxx xxxx
-                    Tel: (xxx) - xxx - xxxx
-                    <p style="color: red;">
+                    <p>Address: xxxx xxxx xxxx</p>
+                    <p>Tel: (xxx) - xxx - xxxx</p>
+                    <p style="color: red; font-size: 12pt;">
                         Unavailable
                     </p>
-                    <a href="javascript:;" onclick="gym()">Select</a>
+                    
                 </div>
 
             </div>
@@ -82,7 +86,8 @@
         <!-- Reference Map -->
         </div>
         <div class="map">
-            <img src="https://www.cs.cmu.edu/~csbots/images/AnnotatedMap.jpg" alt="cmu map">
+            <a href="https://ibb.co/8bgVNnj"><img src="https://i.ibb.co/42RxKwj/map.png" 
+                alt="map"></a>
         </div>
     </div>
     <script src="./appType.js"></script>
