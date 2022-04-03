@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Book Appointment | CMU COVID INFO SYSTEM</title>
+    <meta charset="UTF-8">
+</head>
+
+<!-- header -->
+
+<body>
+    <header>
+        <h1>CMU COVID INFO SYSTEM</h1>
+        <nav>
+            <a href="index.html">HOME</a> |
+            <a href="manager.html">Manage Appointment</a> |
+            <a href="record.html">My Record</a>
+        </nav>
+    </header>
+
+    <div>
+        <h1 id="page-name">Appointment</h1>
+       
+    </div>
+    <div class="app-type">
+        <h2>Type</h2>
+        <h3><a href="./appType.html?Vaccination">Vaccination</a></h3>
+        <h3><a href="./appType.html?Testing">Testing</a></h3>
+    </div>
+    <div class="main-content">
+        <!-- Location list -->
+        <div id="appointment-options">
+            <h2>Locations</h2>
+            <div class="locations">
+                <div class="location-name">
+                    TCS Hall
+                    <a style="color: red; font-size: 15pt;"
+                    href="javascript:;" onclick="tsc()">Select</a>
+                </div>
+                <div class="location-detail">
+                    <p>Address: xxxx xxxx xxxx</p>
+                    <p>Tel: (xxx) - xxx - xxxx</p>
+                    <p style="color: green; font-size: 12pt;">
+                        Available today
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="locations">
+                <div class="location-name">
+                    East Garage
+                    <a style="color: red; font-size: 15pt;"
+                    href="javascript:;" onclick="eg()">Select</a>
+                </div>
+                <div class="location-detail">
+                    <p>Address: xxxx xxxx xxxx</p>
+                    <p>Tel: (xxx) - xxx - xxxx</p>
+                    <p style="color: yellowgreen; font-size: 12pt;">
+                        Available in 7 days
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="locations">
+                <div class="location-name">
+                    Gym 
+                    <a style="color: red; font-size: 15pt;"
+                    href="javascript:;" onclick="gym()">Select</a>
+                </div>
+                <div class="location-detail">
+                    <p>Address: xxxx xxxx xxxx</p>
+                    <p>Tel: (xxx) - xxx - xxxx</p>
+                    <p style="color: red; font-size: 12pt;">
+                        Unavailable
+                    </p>
+                    
+                </div>
+
+            </div>
+
+        <!-- Reference Map -->
+        </div>
+        <div class="map">
+            <a href="https://ibb.co/8bgVNnj"><img src="https://i.ibb.co/42RxKwj/map.png" 
+                alt="map"></a>
+        </div>
+    </div>
+    <script src="./appType.js"></script>
+</body>
+
+</html>

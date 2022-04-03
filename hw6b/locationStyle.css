@@ -1,0 +1,56 @@
+body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    padding-top: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+/*********** HEADER ************/
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #A6192E;
+    color: white;
+    font-family: 'Source Serif Pro', serif;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+/*********** LISTS ************/
+
+#page-name {
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.location-name  {
+    font-size: 20pt;
+}
+
+.location-detail  {
+    font-size: 14pt;
+}
+
+.main-content {
+    text-align: center;
+}

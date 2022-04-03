@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="appstyle.css">
+    <title>Manage Appointment | CMU COVID INFO SYSTEM</title>
+    <meta charset="UTF-8">
+    
+</head>
+
+<!-- header -->
+
+<body>
+    <header>
+        <h1>CMU COVID INFO SYSTEM</h1>
+        <nav>
+            <a href="index.html">HOME</a> |
+            <a href="Book.html">Book Appointment</a> |
+            <a href="record.html">My Record</a>
+        </nav>
+    </header>
+
+    <div id="page-name">
+        <h1>Manage Appointment</h1>
+    </div>
+    <div id="cart-feature">
+        You have a total of <span id="app-count"> 0 </span>
+    </div>
+    <!-- display vaccination appointments -->
+    <h2>VACCINATION</h2>
+    <table cellspacing=0>
+        <thead>
+            <tr>
+                <th>Location</th>
+                <th>Address</th>
+                <th>Tel</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody id="box1">
+        </tbody>
+    </table>
+    
+    <!-- display testing appointments -->
+    <h2>TESTING</h2>
+    <table cellspacing=0>
+        <thead>
+            <tr>
+                <th>Location</th>
+                <th>Address</th>
+                <th>Tel</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody id="box2">
+        </tbody>
+    </table>
+    <script src="./manager.js"></script>
+</body>
+
+</html>
