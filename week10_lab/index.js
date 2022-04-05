@@ -6,11 +6,12 @@ function init() {
       const notice = e.currentTarget.parentElement;
       notice.classList.add("dismissed");
     };
-    // loadPlotly();
+    loadPlotly();
+    console.log("I am here ")
   }
   
   function loadPlotly() {
-    Plotly.d3.csv(
+    d3.csv(
       "https://raw.githubusercontent.com/jcambre/PUI2020/master/nyt-college-covid.csv",
       function (err, rows) {
         function unpack(rows, key) {
@@ -47,7 +48,8 @@ function init() {
                 color: "black",
                 width: 2
               }
-            }
+            },
+            text: hoverText,
           }
         ];
   

@@ -3,6 +3,7 @@
   <head>
     <title>Dashboard of COVID Cases at US Universities</title>
     <meta charset="UTF-8" />
+    
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap"
@@ -12,11 +13,15 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+
     <script src="index.js"></script>
     <!-- #3: Import external libraries here -->
-
-
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.plot.ly/plotly-2.9.0.min.js"></script>
+    <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+    <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+    <script src="https://d3js.org/d3-request.v1.min.js"></script>
   </head>
 
   <body>
@@ -24,7 +29,7 @@
       COVID Cases at US Universities
     </header>
     <main>
-      <div id="notice">
+      <div class = "animate__animated animate__bounce" id="notice">
         <span id="case-date-update">
           Case data updated as of October 22, 2020
         </span>
