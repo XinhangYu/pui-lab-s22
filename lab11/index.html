@@ -20,14 +20,60 @@
 <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
 <!--Here is a single row with a 4/8 column split in Bootstrap-->
 <div class="row">
-<div class="col" style="background-color:lavender;">.col</div>
-<!-- Add contact  form inside this DIV-->
-<div class="col-6" style="background-color:lavenderblush;">.col-6</div>
-<div class="col" style="background-color:whitesmoke;">.col</div>
+    <div class="col-md" style="background-color:lavender;">.col</div>
+    <!-- Add contact  form inside this DIV-->
+    <div class="col-md-6" style="background-color:lavenderblush;">col-6</div>
+    <div class="col-md" style="background-color:whitesmoke;">.col</div>
+</div>
+<div class="row">
+    <div class="col-md" style="background-color:lavender;">.col</div>
+    <!-- Add contact  form inside this DIV-->
+    <div class="col-md" style="background-color:lavenderblush;">
+        <form>
+            <div >
+                <label for="exampleInputName1" class="form-label">Name</label>
+                <input type="name" class="form-control" id="exampleInputName1">
+            </div>
+            <div >
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div >
+                <label for="exampleInputSubject" class="form-label">Subject</label>
+                <input type="subject" class="form-control" id="exampleInputSubject">
+            </div>
+            <div>
+                <label for="exampleInputBody" class="form-label">Body</label>
+                <textarea class="form-control" id="exampleInputBody" rows="3"></textarea>
+            </div>
+
+            <!-- Add modal for this  -->
+<button type="button" class="btn btn-primary col-12" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</button>
+  
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Thanks for contacting us!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        </form>
+    </div>
+    
+    <div class="col-md-6" style="background-color:whitesmoke;">.col</div>
 </div>
 </div>
 <br>
-<!-- Add modal for this  -->
-<button type="button" class="btn btn-primary">Click Me!</button>
+
 </body>
 </html>
