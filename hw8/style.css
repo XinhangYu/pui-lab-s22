@@ -32,5 +32,24 @@ input[type="text"]{
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  color: black;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #ef6960;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #ef6960;
 }
