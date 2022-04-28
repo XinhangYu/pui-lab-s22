@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg  navbar-light py-3 fixed-top" style="background-color: #ed8e87;">
+    <nav class="navbar navbar-expand-lg py-3 fixed-top" style="background-color: #f1a9a4;">
       <div class="container">
         <a href="#" class="navbar-brand"> </a>
 
@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
+                <a href="#about" class="nav-link active">About</a>
               </li>
               <li class="nav-item">
                 <a href="#courses" class="nav-link">Courses</a>
@@ -495,5 +495,19 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+      var btnContainer = document.querySelectorAll("navmenu");
+      var btns = btnContainer.querySelectorAll("nav-link");
+      function activeMenu(){
+        let len = btns.length;
+        while(--len && window.scrollY + 97 < btns[len].offsetTop){}
+        btnContainer.forEach(ltx => ltx.classList.remove('active'));
+        btnContainer[len].classList.add("active");
+      }
+      activeMenu();
+      window.addEventListener("scroll", activeMenu);
+    </script>
   </body>
+  
 </html>
