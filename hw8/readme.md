@@ -1,4 +1,4 @@
-Video: 
+Video: https://www.youtube.com/watch?v=QBMfXt1QrZU
 
 Figma: https://www.figma.com/file/li7Km0svMOV0eEhLeyLKsa/portfolio?node-id=3%3A2
 
