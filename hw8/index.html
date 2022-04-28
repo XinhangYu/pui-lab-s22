@@ -20,10 +20,9 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg py-3 fixed-top" style="background-color: #f1a9a4;">
+    <nav class="navbar navbar-expand-lg  navbar-light py-3 fixed-top" style="background-color: #ed8e87;">
       <div class="container">
         <a href="#" class="navbar-brand"> </a>
-
         <button
           class="navbar-toggler"
           type="button"
@@ -31,11 +30,10 @@
           data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-                <a href="#about" class="nav-link active">About</a>
+                <a href="#about" class="nav-link">About</a>
               </li>
               <li class="nav-item">
                 <a href="#courses" class="nav-link">Courses</a>
@@ -53,12 +51,10 @@
               <li class="nav-item">
                 <a href="#contact" class="nav-link">Message</a>
               </li>
-
           </ul>
         </div>
       </div>
     </nav>
-
     <!-- About -->
     <section id="about"
       class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
@@ -159,8 +155,6 @@
           </div>
           
         </div>
-
-
         
       </div>
     </section>
@@ -241,10 +235,8 @@
         </div>
       </div>
     </section>
-
     
     
-
     <!-- instructors -> experience -->
     <section id="experience" class="p-5 bg-light">
       <div class="container">
@@ -327,7 +319,6 @@
           <h1 class="text-sm-start text-dark p-0">Projects</h1>
       </div>
     
-
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -370,37 +361,35 @@
       </button>
     </div>
   </section>
-
   <!-- Contact & Map -->
     <section class="p-5">
       <div class="container" id="contact">
         <div class="row g-4">
           <div class="col-md">
-            <h1 class="text-dark   mb-4">Contact Info</h1>
-            <ul class="list-group list-group-flush lead">
-              <li class="list-group-item">
-                <a href="https://www.visitpittsburgh.com"><i class="bi bi-heart text-dark mx-1"></i></a>
-                <span class="fw-bold">Address:</span> <span class="bg-success"> Pittsburgh, PA</span>
-              </li>
-              <li class="list-group-item">
-                <a href="https://www.instagram.com/yxh_sherry/"><i class="bi bi-instagram text-dark mx-1"></i></a>
-                <span class="fw-bold">Instagram:</span> <span class="bg-success"> yxh_sherry</span>
-              </li>
-              <li class="list-group-item">
-                <a href="https://www.linkedin.com/in/xinhang-yu-b198aa15b/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                <span class="fw-bold">LinkedIn</span> <span class="bg-success"> Xinhang Yu</span>
-              </li>
-              <li class="list-group-item">
-                <a href="https://www.facebook.com/xinhang.yu.9/"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <span class="fw-bold ">Facebook</span>
-                <span class="bg-success"> Xinhang Yu</span>
-              </li>
+             <h1 class="text-dark   mb-4">Contact Info</h1>
+             <ul class="list-group list-group-flush lead">
+               <li class="list-group-item">
+                 <a href="https://www.visitpittsburgh.com"><i class="bi bi-heart text-dark mx-1"></i></a>
+                 <span class="fw-bold">Address:</span> <span class="bg-success"> Pittsburgh, PA</span>
+               </li>
+               <li class="list-group-item">
+                 <a href="https://www.instagram.com/yxh_sherry/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                 <span class="fw-bold">Instagram:</span> <span class="bg-success"> yxh_sherry</span>
+               </li>
+               <li class="list-group-item">
+                 <a href="https://www.linkedin.com/in/xinhang-yu-b198aa15b/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                 <span class="fw-bold">LinkedIn</span> <span class="bg-success"> Xinhang Yu</span>
+               </li>
+               <li class="list-group-item">
+                 <a href="https://www.facebook.com/xinhang.yu.9/"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                 <span class="fw-bold ">Facebook</span>
+                 <span class="bg-success"> Xinhang Yu</span>
+               </li>
             </ul>
           </div>
           <div class="col-md">
             <!--Message-->
     <div class="container py-4">
-
       <!-- Bootstrap 5 starter form -->
       <form id="contactForm" action="https://formsubmit.co/b391b26958aae40eab91466ff4730d53" method="POST">
           
@@ -419,9 +408,7 @@
         </div>
       </div>
     </section>
-
     
-
     <!-- Footer -->
     <footer class="p-2 bg-primary text-white text-center position-relative">
       <div class="container">
@@ -431,7 +418,6 @@
         </a>
       </div>
     </footer>
-
     <!-- Modal -->
     <div
       class="modal fade"
@@ -487,7 +473,6 @@
         </div>
       </div>
     </div>
-
     
     
     <script
@@ -495,19 +480,5 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script type="text/javascript">
-      var btnContainer = document.querySelectorAll("navmenu");
-      var btns = btnContainer.querySelectorAll("nav-link");
-      function activeMenu(){
-        let len = btns.length;
-        while(--len && window.scrollY + 97 < btns[len].offsetTop){}
-        btnContainer.forEach(ltx => ltx.classList.remove('active'));
-        btnContainer[len].classList.add("active");
-      }
-      activeMenu();
-      window.addEventListener("scroll", activeMenu);
-    </script>
   </body>
-  
 </html>
