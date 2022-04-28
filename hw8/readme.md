@@ -16,8 +16,8 @@ Using my website:
 - Sending me a message (the form works so feel free to send me actual message!)
 
 External tools:
-- Bootstrap 5
-- FormSumbit.co
+- Bootstrap 5 because it delivers clear formatting. I used it with sass for customized styling so that I can choose a different theme than default bootstrap 5 colors
+- FormSumbit.co becuase it helps with activating forms in html
 
 Iteration from HW7:
 - I have changed the project layout and added courses section from hw7.
